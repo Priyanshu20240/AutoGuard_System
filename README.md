@@ -239,6 +239,8 @@ http://localhost:5173
 
 You should see the interactive 3D constellation dashboard! 🌍
 
+## For better visulization, use ctrl + dash key
+
 ---
 
 ## 📁 Project Structure
