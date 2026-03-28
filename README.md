@@ -238,17 +238,10 @@ http://localhost:5173
 ```
 
 You should see the interactive 3D constellation dashboard! 🌍
-
+```
 # For better visulization, use (ctrl + dash key)
 
-### Step 5: To Test
----
-# Ex python "c:\Users\ppgku\Downloads\acm_test_suite (1).py"
-# Here c:\Users\ppgku\Downloads file location and acm_test_suite (1) is file 
-# Backend should start 
-cd AutoGuard_System
-python test_suite.py
----
+###  Step 5: To Test
 
 
 ## 📁 Project Structure
