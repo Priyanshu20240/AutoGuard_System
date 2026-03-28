@@ -613,7 +613,7 @@ Per National Space Hackathon 2026 requirements:
 Report issues: [GitHub Issues](https://github.com/Priyanshu20240/AutoGuard_System/issues)
 
 ### Contact
-- 📧 Email: support@autoguard.dev
+- 📧 Email: priyanshu.2428ece212@kiet.edu
 - 🔗 GitHub: [@Priyanshu20240](https://github.com/Priyanshu20240)
 
 ---
