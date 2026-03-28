@@ -159,8 +159,45 @@ npm --version             # Should be 9 or higher
 git clone https://github.com/Priyanshu20240/AutoGuard_System.git
 cd AutoGuard_System
 ```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Step 2: Starting Backend
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Method 1: Via Docker
+------------------------
+🐳 Docker Deployment
 
-### Step 2: Start Backend (Terminal 1)
+### Build & Run with Docker
+
+```bash
+# Build Docker image (must use ubuntu:22.04 base)
+docker build -t autoguard-system .
+
+# Run container (must bind port 8000 to 0.0.0.0)
+docker run -p 8000:8000 autoguard-system
+```
+
+The Dockerfile:
+- Uses `ubuntu:22.04` base image
+- Installs Python 3.11, Node.js 20, and dependencies
+- Builds frontend (React + Vite) → static files
+- Installs backend dependencies
+- Exposes **port 8000** on `0.0.0.0` (not localhost)
+- Serves **both frontend & backend** on port 8000
+
+### Verification
+
+```bash
+# Test backend health
+curl http://0.0.0.0:8000/api/status
+
+# Test frontend
+open http://0.0.0.0:8000
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                               OR
+------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                 
+### Method 2: Starting Locally With Terminal
+---------------------------------------------
 
 ```bash
 # Navigate to backend
@@ -175,6 +212,8 @@ python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ✅ Backend running at: http://localhost:8000
 📚 API Docs at: http://localhost:8000/docs
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Step 3: Start Frontend (Terminal 2)
 
@@ -401,35 +440,7 @@ GET /api/health
 
 ---
 
-## 🐳 Docker Deployment
 
-### Build & Run with Docker
-
-```bash
-# Build Docker image (must use ubuntu:22.04 base)
-docker build -t autoguard-system .
-
-# Run container (must bind port 8000 to 0.0.0.0)
-docker run -p 8000:8000 autoguard-system
-```
-
-The Dockerfile:
-- Uses `ubuntu:22.04` base image
-- Installs Python 3.11, Node.js 20, and dependencies
-- Builds frontend (React + Vite) → static files
-- Installs backend dependencies
-- Exposes **port 8000** on `0.0.0.0` (not localhost)
-- Serves **both frontend & backend** on port 8000
-
-### Verification
-
-```bash
-# Test backend health
-curl http://0.0.0.0:8000/api/status
-
-# Test frontend
-open http://0.0.0.0:8000
-```
 
 ### Access via Docker
 - **Frontend & Backend**: http://0.0.0.0:8000
