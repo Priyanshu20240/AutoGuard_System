@@ -239,9 +239,16 @@ http://localhost:5173
 
 You should see the interactive 3D constellation dashboard! 🌍
 
-# For better visulization, use ctrl + dash key
+# For better visulization, use (ctrl + dash key)
 
 ---
+### Step 5: To Test
+# Ex python "c:\Users\ppgku\Downloads\acm_test_suite (1).py"
+# Here c:\Users\ppgku\Downloads file location and acm_test_suite (1) is file 
+# Backend should start 
+cd AutoGuard_System
+python test_suite.py
+
 
 ## 📁 Project Structure
 
@@ -615,8 +622,12 @@ Report issues: [GitHub Issues](https://github.com/Priyanshu20240/AutoGuard_Syste
 ### Contact
 - 📧 Email: priyanshu.2428ece212@kiet.edu
 - 🔗 GitHub: [@Priyanshu20240](https://github.com/Priyanshu20240)
+- 📧 Email:shivansh2018verma@gmail.com
+- 🔗 GitHub: [@Shivansh6307](https://github.com/Shivansh6307)
 - 📧 Email:aditya.2428ece2146@kiet.edu
 - 🔗 GitHub: [@Aditya2146](https://github.com/Aditya2146)
+- 📧 Email:vansh.2428ece941@kiet.edu
+- 🔗 GitHub: [@Vansharora001](https://github.com/Vansharora001)
 ---
 
 ## 📄 License
