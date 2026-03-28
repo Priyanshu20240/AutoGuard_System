@@ -615,7 +615,8 @@ Report issues: [GitHub Issues](https://github.com/Priyanshu20240/AutoGuard_Syste
 ### Contact
 - 📧 Email: priyanshu.2428ece212@kiet.edu
 - 🔗 GitHub: [@Priyanshu20240](https://github.com/Priyanshu20240)
-
+- 📧 Email:aditya.2428ece2146@kiet.edu
+- 🔗 GitHub: [@Aditya2146](https://github.com/Aditya2146)
 ---
 
 ## 📄 License
