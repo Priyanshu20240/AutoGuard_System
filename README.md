@@ -247,7 +247,7 @@ Run the test suite to verify that the backend is working correctly.
 ---bash
 # Example:
 # python "C:\Users\ppgku\Downloads\acm_test_suite (1).py"
-# (Here, the path is the location of your test file)
+# (Here, the C:\Users\ppgku\Downloads is the location of your test file and acm_test_suite (1) is file name  )
 
 cd AutoGuard_System
 python test_suite.py
