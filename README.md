@@ -70,41 +70,41 @@
 AutoGuard is an **Autonomous Constellation Manager (ACM)** that provides satellite constellation management, debris detection, and collision avoidance through a modern web-based interface.
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                   🎨 FRONTEND (React + Vite)                     │
-│  ┌────────────────────────────────────────────────────────────┐  │
-│  │  • 3D Globe Visualization (Three.js + react-globe.gl)     │  │
-│  │  • Real-time Satellite & Debris Tracking                  │  │
-│  │  • Maneuver Planning & Validation Interface               │  │
-│  │  • Predictive Conjunction Warnings Dashboard              │  │
-│  └────────────────────────────────────────────────────────────┘  │
-│                     ↕ HTTP/JSON (Dev: 5173, Docker: 8000)       │
+┌──────────────────────────────────────────────────────────────────|
+│                   🎨 FRONTEND (React + Vite)                     
+│  ┌────────────────────────────────────────────────────────────|
+│  │  • 3D Globe Visualization (Three.js + react-globe.gl)     
+│  │  • Real-time Satellite & Debris Tracking                  
+│  │  • Maneuver Planning & Validation Interface               
+│  │  • Predictive Conjunction Warnings Dashboard              
+│  └────────────────────────────────────────────────────────────|
+│                     ↕ HTTP/JSON (Dev: 5173, Docker: 8000)       
+├──────────────────────────────────────────────────────────────────|
+│                   ⚙️ BACKEND (FastAPI + Python)                
+│  ┌────────────────────────────────────────────────────────────|
+│  │            🎛️ SimulationEngine (Orchestrator)             
+│  │  ┌──────────────────────────────────────────────────────|
+│  │  │  Physics Engine           Maneuver Planner          
+│  │  │  ├─ SGP4 Propagator       ├─ Burn Validation       
+│  │  │  ├─ Fuel Calculator       ├─ LOS Checking          
+│  │  │  └─ Frame Transform       └─ Schedule Optimizer    
+│  │  │                                                      
+│  │  │  Conjunction Detection    Ground Comms              
+│  │  │  ├─ 24hr Prediction       ├─ Station Coverage       
+│  │  │  ├─ Risk Scoring          ├─ Contact Windows      
+│  │  │  └─ Alert Caching         └─ Command Scheduling    
+│  │  └──────────────────────────────────────────────────────|
+│  └────────────────────────────────────────────────────────────|
+│                         ↑ Port 8000                              
 ├──────────────────────────────────────────────────────────────────┤
-│                   ⚙️ BACKEND (FastAPI + Python)                  │
-│  ┌────────────────────────────────────────────────────────────┐  │
-│  │            🎛️ SimulationEngine (Orchestrator)             │  │
-│  │  ┌──────────────────────────────────────────────────────┐ │  │
-│  │  │  Physics Engine           Maneuver Planner          │ │  │
-│  │  │  ├─ SGP4 Propagator       ├─ Burn Validation       │ │  │
-│  │  │  ├─ Fuel Calculator       ├─ LOS Checking          │ │  │
-│  │  │  └─ Frame Transform       └─ Schedule Optimizer    │ │  │
-│  │  │                                                      │ │  │
-│  │  │  Conjunction Detection    Ground Comms              │ │  │
-│  │  │  ├─ 24hr Prediction       ├─ Station Coverage       │ │  │
-│  │  │  ├─ Risk Scoring          ├─ Contact Windows       │ │  │
-│  │  │  └─ Alert Caching         └─ Command Scheduling    │ │  │
-│  │  └──────────────────────────────────────────────────────┘ │  │
-│  └────────────────────────────────────────────────────────────┘  │
-│                         ↑ Port 8000                              │
-├──────────────────────────────────────────────────────────────────┤
-│                   📊 API ENDPOINTS                                │
-│  POST   /api/telemetry          → Ingest state vectors          │
-│  POST   /api/maneuver/schedule  → Plan evasion burns            │
-│  POST   /api/simulate/step      → Advance simulation            │
-│  GET    /api/visualization/snapshot → Dashboard state           │
-│  GET    /api/conjunctions/predict   → 24-hr warnings            │
-│  GET    /api/status             → Health & statistics           │
-└──────────────────────────────────────────────────────────────────┘
+│                   📊 API ENDPOINTS                              
+│  POST   /api/telemetry          → Ingest state vectors          
+│  POST   /api/maneuver/schedule  → Plan evasion burns            
+│  POST   /api/simulate/step      → Advance simulation            
+│  GET    /api/visualization/snapshot → Dashboard state           
+│  GET    /api/conjunctions/predict   → 24-hr warnings            
+│  GET    /api/status             → Health & statistics           
+└──────────────────────────────────────────────────────────────────|
 ```
 
 ### Technology Stack
