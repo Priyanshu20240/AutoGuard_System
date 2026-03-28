@@ -238,11 +238,11 @@ http://localhost:5173
 ```
 
 You should see the interactive 3D constellation dashboard! 🌍
-```
+
 # For better visulization, use (ctrl + dash key)
----
+
 ###  Step 5: To Test
----
+```
 Run the test suite to verify that the backend is working correctly.
 ---bash
 # Example:
@@ -251,7 +251,7 @@ Run the test suite to verify that the backend is working correctly.
 
 cd AutoGuard_System
 python test_suite.py
----
+```
 
 ## 📁 Project Structure
 
